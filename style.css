@@ -1,0 +1,71 @@
+/* Resources: https://www.w3.org/WAI/WCAG22/Techniques/css/C37 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 50px;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#logo {
+  margin-left: 30px;
+  color: blue;
+  word-spacing: 5px;
+}
+/* -- NAV -- */
+ul {
+  /* Quita las bullets de las escogencias */
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+li a {
+  /* El padding le dará espacio a las escogencias,
+         o sea espacio entre las palabras. */
+  padding: 14px 20px;
+  /* Esto quita la línea de los links. */
+  text-decoration: none;
+  /* Para quitar las "puntas" de las esquinas de las escogencias. */
+  border-radius: 25px;
+}
+li a:hover {
+  color: rgb(113, 220, 6);
+}
+a:visited {
+  color: rgb(22, 56, 248);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* -- COLUMNS -- */
+#wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 1fr;
+}
+main {
+  margin: 20px;
+}
+#left-side, #right-side {
+  background-color: rgb(250, 250, 250);
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 70px;
+}
+
+/* -- -- */
+footer {
+  text-align: center;
+  font-size: 16px;
+  padding: 20px 0;
+  background-color: rgb(250, 250, 250);
+}
